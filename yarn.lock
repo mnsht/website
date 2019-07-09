@@ -4915,11 +4915,6 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-bungee@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-bungee/-/react-bungee-1.0.2.tgz#c6fa47af54eb89631ffc1b43c41af8b171fb7dff"
-  integrity sha512-A2jUmI0+ieGEw89WxS5UVCltKb9WMDk+Fn6nIBex0d2R4yNbZ2nte+0DpX8/WLtojC94uM5g0sLF5bC+qU+LXg==
-
 react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
