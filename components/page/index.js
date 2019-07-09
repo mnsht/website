@@ -63,7 +63,7 @@ export default ({
       </Head>
       <Global
         styles={{
-          normalize,
+          ...normalize,
           body: { background: theme.colors.white, color: theme.colors.black }
         }}
       />
