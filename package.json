@@ -1,0 +1,35 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "The Moonshot website",
+  "main": "index.js",
+  "repository": "https://www.github.com/mnsht/website",
+  "author": "Moonshot <contact@mns.ht>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "@rebass/emotion": "^3.1.1",
+    "babel-plugin-emotion": "^10.0.14",
+    "emotion-normalize": "^10.0.0",
+    "emotion-theming": "^10.0.14",
+    "imagemin-mozjpeg": "^8.0.0",
+    "next": "^8.1.0",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.5.3",
+    "react": "^16.8.6",
+    "react-bungee": "^1.0.2",
+    "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0"
+  },
+  "devDependencies": {
+    "husky": "^2.7.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
+  }
+}
