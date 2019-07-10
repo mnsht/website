@@ -23,7 +23,7 @@ export default () => {
           <Image src={logo} alt={name} width={128} />
           <Flex style={{ transform: 'translate(-25px, -10px) rotate(14deg)' }}>
             {links.map(({ type, link }) => (
-              <ExternalLink to={link} m={2}>
+              <ExternalLink to={link} m={2} key={type}>
                 <Icon type={type} size={32} />
               </ExternalLink>
             ))}
