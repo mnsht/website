@@ -1,6 +1,14 @@
+import logo from '../static/logo-square.png';
+import logoText from '../static/logo-text.png';
+
 export default {
-  hero: {
-    tagline: 'Moonshot is',
-    options: ['an open-source collective', 'a dev shop', 'a design studio']
-  }
+  logo,
+  logoText,
+  name: 'Moonshot',
+  hero: [
+    'Moonshot is an open-source collective',
+    'Moonshot is a dev shop',
+    'Moonshot is a design studio',
+    "Check out what we're up to..."
+  ]
 };

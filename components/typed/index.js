@@ -1,17 +1,16 @@
 import { useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 
-export default ({ options }) => {
+export default ({ strings, onComplete }) => {
   const typedRef = useRef(null);
 
   useEffect(() => {
     new Typed(typedRef.current, {
-      strings: options,
-      typeSpeed: 30,
+      strings,
+      typeSpeed: 20,
       backSpeed: 15,
       backDelay: 1000,
-      smartBackspace: false,
-      loop: true
+      onComplete
     });
   }, [typedRef.current]);
 

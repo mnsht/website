@@ -1,10 +1,10 @@
 import { useRef, useEffect } from 'react';
-import { Box } from '@rebass/emotion';
+import { Box } from 'rebass';
 
 import useWindowSize from './resize';
 import createBackground from './background';
 
-export default ({ children, style, ...props }) => {
+export default ({ children, ...props }) => {
   const size = useWindowSize();
   const svgContainer = useRef(null);
 
@@ -32,8 +32,17 @@ export default ({ children, style, ...props }) => {
   };
 
   return (
-    <Box {...props} style={{ position: 'relative', ...style }}>
-      <svg ref={svgContainer} width="100%" height="100%" style={svgStyles} />
+    <Box
+      {...props}
+      style={{ position: 'relative', transition: 'height 1s ease-in-out' }}
+    >
+      <svg
+        ref={svgContainer}
+        width="100%"
+        height="100%"
+        style={svgStyles}
+        preserveAspectRatio="none"
+      />
       {children}
     </Box>
   );

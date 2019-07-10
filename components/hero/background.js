@@ -1,9 +1,15 @@
+/*
+  All of the below is based roughly on the work of Fabio Ottaviani:
+  https://codepen.io/supah/
+*/
+
 import tinygradient from 'tinygradient';
 
 /*
   TODO:
   - Figure out a more intelligent way to resize background and potentially remove resize hook file
-  - Figure out bottom stroke issue
+  - Fix bottom stroke issue when not filling
+  - Fix jagged edges on right side when resizing
   - Add some sort of animation or interaction
 */
 

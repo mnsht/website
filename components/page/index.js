@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import { Global } from '@emotion/core';
-import { ThemeProvider } from 'emotion-theming';
-import normalize from 'emotion-normalize';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import normalize from 'styled-normalize';
 
 import theme from './theme.js';
 import defaultImage from '../../static/logo.jpg';
@@ -10,6 +9,11 @@ const defaultCanonical = 'https://moonshot.is';
 const defaultName = 'Moonshot';
 const defaultDescription =
   'Moonshot is an open-source collective, dev shop, and design studio all rolled into one.';
+
+const Global = createGlobalStyle({
+  ...normalize,
+  body: { background: theme.colors.white, color: theme.colors.black }
+});
 
 export default ({
   title,
@@ -61,12 +65,7 @@ export default ({
 
         <title>{title}</title>
       </Head>
-      <Global
-        styles={{
-          ...normalize,
-          body: { background: theme.colors.white, color: theme.colors.black }
-        }}
-      />
+      <Global />
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </React.Fragment>
   );
