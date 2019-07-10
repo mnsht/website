@@ -32,10 +32,7 @@ export default ({ children, ...props }) => {
   };
 
   return (
-    <Box
-      {...props}
-      style={{ position: 'relative', transition: 'height 1s ease-in-out' }}
-    >
+    <Box {...props} style={{ position: 'relative' }}>
       <svg
         ref={svgContainer}
         width="100%"

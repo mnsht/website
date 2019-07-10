@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 
-export default ({ strings, onComplete }) => {
+export default ({ strings, ...props }) => {
   const typedRef = useRef(null);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ export default ({ strings, onComplete }) => {
       typeSpeed: 20,
       backSpeed: 15,
       backDelay: 1000,
-      onComplete
+      ...props
     });
   }, [typedRef.current]);
 
