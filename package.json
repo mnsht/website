@@ -6,6 +6,9 @@
   "repository": "https://www.github.com/mnsht/website",
   "author": "Moonshot <contact@mns.ht>",
   "license": "MIT",
+  "engines": {
+    "node": ">=9.7.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
