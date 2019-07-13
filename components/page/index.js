@@ -3,12 +3,12 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import normalize from 'styled-normalize';
 
 import theme from './theme.js';
-import defaultImage from '../../static/logo.jpg';
 
 const defaultCanonical = 'https://moonshot.is';
 const defaultName = 'Moonshot';
 const defaultDescription =
   'Moonshot is an open-source collective, dev shop, and design studio all rolled into one.';
+const defaultImage = '/static/logo.jpg';
 
 const Global = createGlobalStyle({
   ...normalize,

@@ -1,7 +1,5 @@
-import logo from '../static/logo-square.svg';
-
 export default {
-  logo,
+  logo: '/static/logo-square.svg',
   name: 'Moonshot',
   links: [
     {
