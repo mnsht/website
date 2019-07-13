@@ -1,19 +1,10 @@
 import Head from 'next/head';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import normalize from 'styled-normalize';
-
-import theme from './theme.js';
 
 const defaultCanonical = 'https://moonshot.is';
 const defaultName = 'Moonshot';
 const defaultDescription =
   'Moonshot is an open-source collective, dev shop, and design studio all rolled into one.';
 const defaultImage = '/static/logo.jpg';
-
-const Global = createGlobalStyle({
-  ...normalize,
-  body: { background: theme.colors.white, color: theme.colors.black }
-});
 
 export default ({
   title,
@@ -27,7 +18,7 @@ export default ({
   title = title ? `${name} | ${title}` : name;
 
   return (
-    <React.Fragment>
+    <>
       <Head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -65,8 +56,7 @@ export default ({
 
         <title>{title}</title>
       </Head>
-      <Global />
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
-    </React.Fragment>
+      {children}
+    </>
   );
 };
