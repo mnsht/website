@@ -6,6 +6,9 @@
   "repository": "https://www.github.com/mnsht/website",
   "author": "Moonshot <contact@mns.ht>",
   "license": "MIT",
+  "scripts": {
+    "build": "next build"
+  },
   "engines": {
     "node": ">=9.7.0"
   },
