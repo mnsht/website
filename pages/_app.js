@@ -3,7 +3,7 @@ import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import normalize from 'styled-normalize';
 
-import theme from './_theme';
+import theme from '../components/_theme';
 
 const Global = createGlobalStyle({
   ...normalize,
